@@ -1,0 +1,12 @@
+CREATE DATABASE impression;
+CREATE DATABASE trace_db;
+CREATE DATABASE toms_db;
+USE impression;
+GRANT ALL PRIVILEGES ON impression.* TO 'impuser'@'%' IDENTIFIED BY 'impuser';
+GRANT ALL PRIVILEGES ON impression.* TO 'impuser'@'localhost' IDENTIFIED BY 'impuser';
+USE trace_db;
+GRANT ALL PRIVILEGES ON trace_db.* TO 'trace_user'@'%' IDENTIFIED BY 'trace_user';
+GRANT ALL PRIVILEGES ON trace_db.* TO 'trace_user'@'localhost' IDENTIFIED BY 'trace_user';
+USE toms_db;
+GRANT ALL PRIVILEGES ON toms_db.* TO 'tomsuser'@'%' IDENTIFIED BY 'tomsuser';
+GRANT ALL PRIVILEGES ON toms_db.* TO 'tomsuser'@'localhost' IDENTIFIED BY 'tomsuser';
